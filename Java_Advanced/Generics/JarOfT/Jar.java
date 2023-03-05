@@ -1,0 +1,21 @@
+package _01_JarOfT;
+
+import java.util.ArrayDeque;
+
+public class Jar<T> {
+
+    private ArrayDeque<T> stack;
+
+    public Jar() {
+        this.stack = new ArrayDeque<>();
+    }
+
+    public void add(T item) {
+        stack.push(item);
+    }
+
+    public T remove()  {
+       return stack.pop();
+    }
+
+}
